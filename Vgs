@@ -1,0 +1,64 @@
+genotype -> array with 1s and 0s for the indiv
+phenotype -> selected sets
+
+universe -> ex: 1, 2, 3, 4, 5, 6, 7, ..., n (números naturais de 1 a n)
+sets -> array with arrays corresponding to the lines from the file
+solution -> 0s e 1s do indivíduo
+
+fitness
+	overlap += len(set(pheno[i]) & set(pheno[j]))
+		adiciona o comprimento do set de elementos comuns
+
+-------------------------------------------------
+
+fitness (Vg = 8)
+	geno2pheno (Vg = 3)
+
+muta_bin (Vg = 3)
+	muta_bin_gene (Vg = 2)
+
+gera_pop (Vg = 3)
+	gera_indiv (Vg = 2)
+
+------------------------------------------------
+
+displayResult (Vg = 2, excluding function calls)
+	geno2pheno (Vg = 3)
+
+tournament (Vg = 2)
+	one_tour (Vg = 1)
+
+readFile (Vg = 2)
+
+one_point_cross (Vg = 2)
+
+elitism (Vg = 1)
+
+best_pop (Vg = 1)
+
+
+
+
+sea (Vg = 6, excluding function calls)
+	gera_pop (Vg = 3)
+	fitness (Vg = 8)
+	tournament (Vg = 2)
+	one_point_cross (Vg = 2)
+	muta_bin (Vg = 3)
+	fitness (Vg = 8)
+	elitism (Vg = 1)
+	fitness (Vg = 8)
+	best_pop (Vg = 1)
+
+------------------------------------------------
+
+Variáveis e parmâmetros
+	fitness (14, sem contar com o geno2pheno) -> (16, ao contar com as 2 temporárias adicionadas)
+		geno2pheno (4)
+
+	muta_bin (6)
+		muta_bin_gene (4)
+
+	gera_pop (5)
+		gera_indiv (3)
+

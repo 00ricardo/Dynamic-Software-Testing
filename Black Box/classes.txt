@@ -1,0 +1,23 @@
+classes
+
+1 - Número de Sets
+2 - Tamanho do Universe
+
+3 - Número de Gerações
+4 - Tamanho da População
+5 - Probabilidade de Mutação
+6 - Probabilidade de Crossover
+7 - Tamanho do Torneio
+8 - Elitismo
+
+Seeds:
+7575
+158
+4209
+4610
+8967
+5668
+938
+6559
+4849
+6811
